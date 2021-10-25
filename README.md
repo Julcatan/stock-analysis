@@ -1,2 +1,3 @@
 # stock-analysis
-VBA module - lesson Data Analytics Bootcamp
+VBA module - Challenge
+
