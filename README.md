@@ -31,7 +31,7 @@ I reused the existing code from the starter code to
     tickerIndex = 0
 
 ###'1b) I created three output arrays for ticker Volumes, tickerStarterPrices, and tickerEndingPrices
-    The tickerVolumes were
+    'The Datatype for ticker was set to Long, tickerStartingPrice and tickerEndingPrice to Single 
     
     Dim tickerVolumes(12) As Long
     Dim tickerStartingPrices(12) As Single
@@ -51,7 +51,7 @@ I reused the existing code from the starter code to
            ### '3a) This increases the volume for the current ticker 
             tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value   '???
             
-            ###'3b) This code checks if the current row is the first row with the selected tickerIndex and if it is it
+            ###'3b) This code checks if the current row is the first row with the selected tickerIndex and if so
             it assigns the current starting price to the tickerStartingPrice variable
                                             
             If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
@@ -61,8 +61,8 @@ I reused the existing code from the starter code to
                      
         'End If
              
-            ###'3c) check if the current row is the last row with the selected ticker
-            'If the next row’s ticker doesn’t match, increase the tickerIndex.
+            ###'3c) This checks if the current row is the last row with the selected ticker
+            'If the next row’s ticker doesn’t match the tickerIndex gets increased.
                                     
             If Cells(i + 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
             tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
@@ -76,7 +76,7 @@ I reused the existing code from the starter code to
             
         Next i
        
-       ###'4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
+       ###'4) This code loopd through our arrays to output the Ticker, Total Daily Volume, and Return.
         
         For i = 0 To 11
         
@@ -89,24 +89,11 @@ I reused the existing code from the starter code to
         Next i
         
 
-
-
-
-
-
-
-
-
-* 
-*
-*
-*
-
-
 1. 
 
 The analysis is well described with screenshots and code (4 pt).
 ## Summary
+
 There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
 There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
 Submission
