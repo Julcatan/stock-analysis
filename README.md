@@ -1,12 +1,13 @@
 # stock-analysis with VBA
-click here for the excel file: 
+
+
 ## Overview of Project
 
 Steve is planning to do more research for his parents. He wants to expand the dataset to include the entire stock market.
 The stock analysis VBA code we developed in module 2 might not work as well and take a long time to excecute for a larger amount of stocks.
 
 Therefore the purpose of the project is to restructure the existing code in a way that improves the internal structure but doesn't change its external behavior.
-We aren’t adding new functionality; but want to make the code more efficient by taking fewer steps, using less memory, or improving the logic of the code to make it easier for future users to read
+We aren’t adding new functionality, but want to make the code more efficient by taking fewer steps, using less memory, or improving the logic of the code to make it easier for future users to read
 
 ## Results
 
@@ -25,13 +26,12 @@ I reused the existing code from the starter code to
   ![image](https://user-images.githubusercontent.com/91682586/138772963-ebb74438-ba95-406b-a745-85f50c30bb10.png)
 
 
-###'1a) I then created the tickerIndex that will later be used to access the arrays created in Step 1b)
-    and I set it to 0. 
+### 1a) I then created the tickerIndex that will later be used to access the arrays created in Step 1b) and set it to 0. 
 
     tickerIndex = 0
 
-###'1b) I created three output arrays for ticker Volumes, tickerStarterPrices, and tickerEndingPrices
-    'The Datatype for ticker was set to Long, tickerStartingPrice and tickerEndingPrice to Single 
+### 1b) I created three output arrays for ticker Volumes, tickerStarterPrices, and tickerEndingPrices
+    The Datatype for ticker was set to Long, tickerStartingPrice and tickerEndingPrice to Single 
     
     Dim tickerVolumes(12) As Long
     Dim tickerStartingPrices(12) As Single
