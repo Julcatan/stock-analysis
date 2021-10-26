@@ -72,7 +72,7 @@ activate the yearValue worksheet, and get the number of rows in the sheet to loo
    
        
    #### 4) This code loops through our arrays to output the Ticker, Total Daily Volume, and Return.
-        
+        'Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
         For i = 0 To 11
         
         Worksheets("All Stocks Analysis").Activate
@@ -82,14 +82,48 @@ activate the yearValue worksheet, and get the number of rows in the sheet to loo
             Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
             
         Next i 
+  
+  #### Formatting - I reused the existing Code to activate and format the Output worksheet, and end the timer 
+  
+   'Formatting
+        Worksheets("All Stocks Analysis").Activate
+        Range("A3:C3").Font.FontStyle = "Bold"
+        Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
+        Range("B4:B15").NumberFormat = "#,##0"
+        Range("C4:C15").NumberFormat = "0.0%"
+         columns("B").AutoFit
+
+         dataRowStart = 4
+         dataRowEnd = 15
+
+        For i = dataRowStart To dataRowEnd
         
+        If Cells(i, 3) > 0 Then
+            
+            Cells(i, 3).Interior.Color = vbGreen
+            
+        Else
+        
+            Cells(i, 3).Interior.Color = vbRed
+            
+        End If
+        
+    Next i
+    'end timer    
+    endTime = Timer
+    MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+
+End Sub
+  
+  
 ### Summary
 
 Through refactoring code becomes easier to understand or read, easier to to update and improve. This can save time and money in the future. 
-This applies to the author coming back to read the code after a while as well as other users.
-It can make the code more flexibel for other uses. 
-A disadvantage is that with comples code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all. Worst case - you spend a lot of time with little success in the end, because of the complexity.
+It also helps the author coming back to read the code after a while as well as outside users.
+Refactoring can make the code more flexibel for other uses. 
+A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all. Because of the complexity you might end up spending a lot of time with little improvement in the end.
 
-For our stock-analysis code the main advantage is that it runs much faster and is more compact.
-With increased speed it will calculate faster for larger datasets. The original code shows an elapsed time of... versus the refactored code of onlt ..... 
-The new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
+For our refactored stock-analysis code the main advantage is that it runs much faster. The original code needed .. to run versus the refactored code running in .....
+With increased speed it will calculate faster which is important for larger datasets.  
+The refactored code can be reused for other projects that require looping over items. 
+As for a disadvantage the new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
