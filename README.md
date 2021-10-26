@@ -7,14 +7,16 @@ Steve is planning to do more research for his parents. He wants to expand the da
 The stock analysis VBA code we developed in module 2 might not work as well and take a long time to excecute for a larger amount of stocks.
 
 Therefore the purpose of the project is to restructure the existing code in a way that improves the internal structure but doesn't change its external behavior.
-We aren’t adding new functionality, but want to make the code more efficient by taking fewer steps, using less memory, or improving the logic of the code to make it easier for future users to read
+We want to make the code faster and more efficient by taking fewer steps, using less memory, and improving the logic of the code.
+
+We will measure via a built in timer if refactoring indeed made the code run faster.
 
 ## Results
 
 ### Analysis
 
-#### First step: Using the starter code in Visual Basic Editor.
-I reused the existing code to set up the Timer, create the user InputBox, activate the "All Stocks Analysis" worksheet, add the header, header row and initialize the array of tickers with the ticker values, activate the yearValue worksheet, and get the number of rows in the sheet to loop over.
+#### First step: 
+I copied the starter code into VBA editor and reused the existing code to set up the Timer, create the user InputBox, activate the "All Stocks Analysis" worksheet, add the header, header row and initialize the array of tickers with the ticker values, activate the yearValue worksheet, and get the number of rows in the sheet to loop over.
 
   ![image](https://user-images.githubusercontent.com/91682586/138772963-ebb74438-ba95-406b-a745-85f50c30bb10.png)
 
@@ -126,16 +128,16 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
 
 ![AllStocksAnalysisResult2017](https://user-images.githubusercontent.com/91682586/138919189-bb3509e4-b0f1-4788-ad78-18974c309cc1.PNG) ![AllStocksAnalysisResult2018](https://user-images.githubusercontent.com/91682586/138919206-f06c5a41-65c3-416a-bd33-30df06e271ca.PNG)
    
-###    I also saved the run time of the new refactured code in the resources folder of this repository.
+### I also saved the run time of the new refactured code in the resources folder of this repository as VBA_Challenge_2017.png and VBA_Challenge_2018.png.
 
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/138922812-5790652a-459d-4a80-92be-29a3dffd2909.PNG) ![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/138922823-b935ba35-0a9d-4225-9060-ea7b1be58a85.PNG)
+
+### Summary
 
 ### Comparison of the stock performance between 2017 and 2018 
 
 2017 was a successful year for most stocks except TERP.  
 2018 shows mostly negative returns except for ENPH and RUN
-
-### Summary
 
 ##### Advantages and disadvantages of refactoring code:
 
