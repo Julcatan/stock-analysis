@@ -149,7 +149,7 @@ I copied the starter code into VBA editor and reused the existing code to set up
 
 ##### Advantages and disadvantages of refactoring the original VBA script:
 
-- For our refactored stock-analysis code the main advantage is that it runs much faster. For 2018 the original code needed 0.9335938 seconds to run versus a run time of        0.1367188 for the refactored code. For 2017 the original code needed 0.8359375 seconds versus the refactored code taking 0.109375 seconds.
+- For our refactored stock-analysis code the main advantage is that it runs much faster. For 2018 the original code needed 0.9335938 seconds to run versus an elapsed run time of        0.1367188 seconds for the refactored code. For 2017 the original code needed 0.8359375 seconds versus the refactored code taking 0.109375 seconds.
 - A faster calculation is important for larger datasets.  
 - The refactored code can be reused for other projects that require looping over items. 
 
