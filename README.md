@@ -9,7 +9,7 @@ The stock analysis VBA code we developed in module 2 might not work as well and 
 Therefore the purpose of the project is to restructure the existing code in a way that improves the internal structure but doesn't change its external behavior.
 We want to make the code faster and more efficient by taking fewer steps, using less memory, and improving the logic of the code.
 
-We will measure via a built in timer if refactoring indeed made the code run faster.
+We will measure with a timer in the code if refactoring indeed made the code run faster.
 
 ## Results
 
@@ -134,12 +134,12 @@ I copied the starter code into VBA editor and reused the existing code to set up
 
 ### Summary
 
-### Comparison of the stock performance between 2017 and 2018 
+##### Comparison of the stock performance between 2017 and 2018 
 
 2017 was a successful year for most stocks except TERP.  
 2018 shows mostly negative returns except for ENPH and RUN
 
-##### Advantages and disadvantages of refactoring code:
+##### Advantages and disadvantages of refactoring code in General:
 
 - Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money in the future. 
 - It helps the author coming back to read the code after a while as well as outside users.
