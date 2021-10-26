@@ -42,7 +42,7 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
    
     
 
-#### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 2b) Created code that will loop over all the rows in the spreadsheet. 
+#### 2b) Created code that will loop over all the rows in the spreadsheet. 
             '2b) Loop over all the rows in the spreadsheet.
             
             For i = 2 To RowCount
@@ -75,7 +75,7 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
                                     
             End If
             
-  #### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) The loop moves on to the next row.
+  ####  The loop moves on to the next row.
         Next i    
    
        
@@ -92,8 +92,7 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
         Next i 
   
   #### Formatting - I reused the existing Code to activate and format the Output worksheet, end the timer, and finish the Macro with End Sub. 
-  
-   'Formatting
+     'Formatting
         Worksheets("All Stocks Analysis").Activate
         Range("A3:C3").Font.FontStyle = "Bold"
         Range("A3:C3").Borders(xlEdgeBottom).LineStyle = xlContinuous
@@ -123,11 +122,15 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
     
     End Sub
   
-## I finally run the stock analysis and confirmed that outputs for 2017 and 2018 were the same as they were in the module.
+### I finally run the stock analysis and confirmed that outputs for 2017 and 2018 were the same as they were in the module.
 
 ![AllStocksAnalysisResult2017](https://user-images.githubusercontent.com/91682586/138919189-bb3509e4-b0f1-4788-ad78-18974c309cc1.PNG) ![AllStocksAnalysisResult2018](https://user-images.githubusercontent.com/91682586/138919206-f06c5a41-65c3-416a-bd33-30df06e271ca.PNG)
+   
+###    I also saved the run time of the new refactured code in the resources folder of this repository.
 
-## comparison of the stock performance between 2017 and 2018 
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/138922812-5790652a-459d-4a80-92be-29a3dffd2909.PNG) ![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/138922823-b935ba35-0a9d-4225-9060-ea7b1be58a85.PNG)
+
+### Comparison of the stock performance between 2017 and 2018 
 
 2017 was a successful year for most stocks except TERP.  
 2018 shows mostly negative returns except for ENPH and RUN
@@ -139,6 +142,7 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
 - Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money in the future. 
 - It helps the author coming back to read the code after a while as well as outside users.
 - Refactoring can make the code more flexibel for other uses. 
+
 - A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all.   Because of the complexity you might end up spending a lot of time with little improvement in the end.
 
 ##### Advantages and disadvantages of refactoring the original VBA script:
@@ -146,4 +150,5 @@ I reused the existing code to set up the Timer, create the user InputBox, activa
 - For our refactored stock-analysis code the main advantage is that it runs much faster. For 2018 the original code needed 0.9335938 seconds to run versus a run time of        0.1367188 for the refactored code. For 2017 the original code needed 0.8359375 seconds versus the refactored code taking 0.109375 seconds.
 - A faster calculation is important for larger datasets.  
 - The refactored code can be reused for other projects that require looping over items. 
-- The new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
+
+- A disadvantage is that the new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
