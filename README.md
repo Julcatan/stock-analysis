@@ -88,12 +88,13 @@ I reused the existing code from the starter code to
             
         Next i
         
-
-1. 
-
-The analysis is well described with screenshots and code (4 pt).
 ## Summary
 
-There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
-There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
-Submission
+Through refactoring code becomes easier to understand or read, easier to to update and improve. This can save time and money in the future. 
+This applies to the author coming back to read the code after a while as well as other users.
+It can make the code more flexibel for other uses. 
+A disadvantage is that with comples code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all. Worst case - you spend a lot of time with little success in the end, because of the complexity.
+
+For our stock-analysis code the main advantage is that it runs much faster and is more compact.
+With increased speed it will calculate faster for larger datasets. The original code shows an elapsed time of... versus the refactored code of onlt ..... 
+The new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
