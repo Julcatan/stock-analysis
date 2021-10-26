@@ -11,17 +11,11 @@ We aren’t adding new functionality, but want to make the code more efficient b
 
 ## Results
 
-Analysis
+### Analysis
 
-First I copied the starter code into the Visual Basic Editor
-
-I reused the existing code from the starter code to 
-- set up the Timer
-- create the InputBox
-- activate the "All Stocks Analysis" worksheet
-- add the header, header row and initialize the array of tickers with the ticker values
-- activate the yearValue worksheet
-- and get the number of rows in the sheet to loop over
+First I copied the starter code into the Visual Basic Editor.
+I reused the existing code from the starter code to set up the Timer, create the user InputBox, activate the "All Stocks Analysis" worksheet, add the header, header row and initialize the array of tickers with the ticker values,
+activate the yearValue worksheet, and get the number of rows in the sheet to loop over.
 
   ![image](https://user-images.githubusercontent.com/91682586/138772963-ebb74438-ba95-406b-a745-85f50c30bb10.png)
 
@@ -30,53 +24,54 @@ I reused the existing code from the starter code to
 
     tickerIndex = 0
 
-### 1b) I created three output arrays for ticker Volumes, tickerStarterPrices, and tickerEndingPrices
-    The Datatype for ticker was set to Long, tickerStartingPrice and tickerEndingPrice to Single 
+### 1b) I created three output arrays for ticker Volumes, tickerStarterPrices, and tickerEndingPrices. The Datatype for ticker was set to Long, tickerStartingPrice and tickerEndingPrice were set to Single. 
     
     Dim tickerVolumes(12) As Long
     Dim tickerStartingPrices(12) As Single
     Dim tickerEndingPrices(12) As Single
     
-###'2a) I created a for loop to initialize the tickerVolumes to zero.
+### 2a) I created a for loop to initialize the tickerVolumes to zero.
     
     For i = 0 To RowCount 
+    
         tickerVolumes(tickerIndex) = 0
                
     Next i
    
     
-      ###''2b) This will Loop over all the rows in the spreadsheet.
-        For i = 2 To RowCount
-    
-           ### '3a) This increases the volume for the current ticker 
-            tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value   '???
+
+### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 2b) This code will loop over all the rows in the spreadsheet. 
             
-            ###'3b) This code checks if the current row is the first row with the selected tickerIndex and if so
-            it assigns the current starting price to the tickerStartingPrice variable
+            For i = 2 To RowCount
+    
+  #### 3a) This code increases the volume for the current ticker. 
+  
+            tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value   
+            
+  #### 3b) This code checks if the current row is the first row with the selected tickerIndex and if true it assigns the current starting price to the tickerStartingPrice  variable.
                                             
             If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i - 1, 1).Value <> tickers(tickerIndex) Then
             tickerStartingPrices(tickerIndex) = Cells(i, 6).Value
             
             End If
                      
-        'End If
-             
-            ###'3c) This checks if the current row is the last row with the selected ticker
-            'If the next row’s ticker doesn’t match the tickerIndex gets increased.
+   #### 3c) This checks if the current row is the last row with the selected ticker. If true it assigns the current ending Price to the tickerEndingPrice variable. 
                                     
             If Cells(i + 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
-            tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
-            'End If
             
-            ###'3d Increase the tickerIndex.
+            tickerEndingPrices(tickerIndex) = Cells(i, 6).Value
+            
+   #### 3d) If the next row’s ticker doesn’t match, the tickerIndex gets increased. This code increases the tickerIndex.
             
             tickerIndex = tickerIndex + 1
                                     
             End If
             
-        Next i
+  #### ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) The loop moves on to the next row.
+        Next i    
+   
        
-       ###'4) This code loopd through our arrays to output the Ticker, Total Daily Volume, and Return.
+   #### 4) This code loops through our arrays to output the Ticker, Total Daily Volume, and Return.
         
         For i = 0 To 11
         
@@ -86,9 +81,9 @@ I reused the existing code from the starter code to
             Cells(4 + i, 2).Value = tickerVolumes(i)
             Cells(4 + i, 3).Value = tickerEndingPrices(i) / tickerStartingPrices(i) - 1
             
-        Next i
+        Next i 
         
-## Summary
+### Summary
 
 Through refactoring code becomes easier to understand or read, easier to to update and improve. This can save time and money in the future. 
 This applies to the author coming back to read the code after a while as well as other users.
