@@ -128,6 +128,7 @@ I copied the starter code into VBA editor and reused the existing code to set up
 ### I finally run the stock analysis and confirmed that outputs for 2017 and 2018 were the same as they were in the module.
 
 ![AllStocksAnalysisResult2017](https://user-images.githubusercontent.com/91682586/138919189-bb3509e4-b0f1-4788-ad78-18974c309cc1.PNG)
+
 ![AllStocksAnalysisResult2018](https://user-images.githubusercontent.com/91682586/138919206-f06c5a41-65c3-416a-bd33-30df06e271ca.PNG)
    
 ### I also saved the run time of the new refactured code in the resources folder of this repository as VBA_Challenge_2017.png and VBA_Challenge_2018.png.
@@ -135,12 +136,14 @@ I copied the starter code into VBA editor and reused the existing code to set up
 ![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/138922812-5790652a-459d-4a80-92be-29a3dffd2909.PNG) 
 ![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/138922823-b935ba35-0a9d-4225-9060-ea7b1be58a85.PNG)
 
+
+
 ### Summary
 ___
 ##### Comparison of the stock performance between 2017 and 2018 
 ***
-2017 was a successful year for most stocks except TERP.  
-2018 shows mostly negative returns except for ENPH and RUN which had again high returns.
+2017 was a successful year for most stocks, with the top performers being DQ, SEDQ, and ENPH. The only stock with a negative return was TERP. Run had a relatively low return.   
+2018 shows mostly negative returns except for ENPH and RUN which had high returns in that year.
 
 ##### Advantages and disadvantages of refactoring code
 ___
