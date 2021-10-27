@@ -1,5 +1,5 @@
 # stock-analysis with VBA
-
+___
 
 ## Overview of Project
 
@@ -10,6 +10,7 @@ Therefore the purpose of the project is to restructure the existing code in a wa
 We want to make the code faster and more efficient by taking fewer steps, using less memory, and improving the logic of the code.
 
 We will measure with a timer in the code if refactoring indeed made the code run faster.
+***
 
 ## Results
 
@@ -126,31 +127,54 @@ I copied the starter code into VBA editor and reused the existing code to set up
   
 ### I finally run the stock analysis and confirmed that outputs for 2017 and 2018 were the same as they were in the module.
 
-![AllStocksAnalysisResult2017](https://user-images.githubusercontent.com/91682586/138919189-bb3509e4-b0f1-4788-ad78-18974c309cc1.PNG) ![AllStocksAnalysisResult2018](https://user-images.githubusercontent.com/91682586/138919206-f06c5a41-65c3-416a-bd33-30df06e271ca.PNG)
+![AllStocksAnalysisResult2017](https://user-images.githubusercontent.com/91682586/138919189-bb3509e4-b0f1-4788-ad78-18974c309cc1.PNG)
+![AllStocksAnalysisResult2018](https://user-images.githubusercontent.com/91682586/138919206-f06c5a41-65c3-416a-bd33-30df06e271ca.PNG)
    
 ### I also saved the run time of the new refactured code in the resources folder of this repository as VBA_Challenge_2017.png and VBA_Challenge_2018.png.
 
-![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/138922812-5790652a-459d-4a80-92be-29a3dffd2909.PNG) ![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/138922823-b935ba35-0a9d-4225-9060-ea7b1be58a85.PNG)
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/138922812-5790652a-459d-4a80-92be-29a3dffd2909.PNG) 
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/138922823-b935ba35-0a9d-4225-9060-ea7b1be58a85.PNG)
 
 ### Summary
-
+___
 ##### Comparison of the stock performance between 2017 and 2018 
-
+***
 2017 was a successful year for most stocks except TERP.  
-2018 shows mostly negative returns except for ENPH and RUN
+2018 shows mostly negative returns except for ENPH and RUN which had again high returns.
 
-##### Advantages and disadvantages of refactoring code in General:
+##### Advantages and disadvantages of refactoring code
+___
 
+in General:
+***
 - Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money in the future. 
 - It helps the author coming back to read the code after a while as well as outside users.
 - Refactoring can make the code more flexibel for other uses. 
 
 - A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all.   Because of the complexity you might end up spending a lot of time with little improvement in the end.
 
-##### Advantages and disadvantages of refactoring the original VBA script:
+for the original VBA script:
+***
+- For our refactored stock-analysis code the main advantage is that it runs much faster. The new code has to loop though the data set only once instead of twelve times as in the original version.
 
-- For our refactored stock-analysis code the main advantage is that it runs much faster. For 2018 the original code needed 0.9335938 seconds to run versus an elapsed run time of        0.1367188 seconds for the refactored code. For 2017 the original code needed 0.8359375 seconds versus the refactored code taking 0.109375 seconds.
+  * For 2018 the original code needed almost a full second (0.8632813 seconds) to run versus an elapsed run time of 0.1367188 seconds for the refactored code. 
+  * For 2017 the original code needed 0.8242188 seconds versus the refactored code taking only 0.109375 seconds.
+
+Original Code:
+
+![image](https://user-images.githubusercontent.com/91682586/139099800-3470444f-bb0a-4bdd-bb4e-ba4d3678cc4a.png)
+![image](https://user-images.githubusercontent.com/91682586/139099440-09d61596-931d-40b3-935f-e4d42f939a0e.png) 
+
+
+Refactored Code:
+
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/91682586/139101037-81cbee9b-27f2-4bb6-bb98-f94eff86324e.PNG)
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/91682586/139101041-684ed256-1b83-40c9-874e-1693f2d2bb51.PNG)
+
+
+
 - A faster calculation is important for larger datasets.  
+
 - The refactored code can be reused for other projects that require looping over items. 
 
 - A disadvantage is that the new code is a bit more complex than the original code, e.g. requires understanding of arrays. 
