@@ -146,7 +146,7 @@ ___
 2018 shows mostly negative returns except for ENPH and RUN which had high returns in that year.
 
 #### Advantages and disadvantages of refactoring code
-___
+
 
  ##### in General:
 ***
