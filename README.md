@@ -142,7 +142,7 @@ I copied the starter code into VBA editor and reused the existing code to set up
 ___
 #### Comparison of the stock performance between 2017 and 2018 
 ***
-2017 was a successful year for most stocks, with the top performers being DQ, SEDQ, and ENPH. The only stock with a negative return was TERP. Run had a relatively low return.   
+2017 was a successful year for most stocks, with the top performers being DQ, SEDQ, and ENPH. The only stock with a negative return was TERP. RUN had a relatively low return.   
 2018 shows mostly negative returns except for ENPH and RUN which had high returns in that year.
 
 #### Advantages and disadvantages of refactoring code
