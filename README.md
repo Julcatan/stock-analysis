@@ -150,11 +150,12 @@ ___
 
 in General:
 ***
-- Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money in the future. 
+- Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money. 
 - It helps the author coming back to read the code after a while as well as outside users.
 - Refactoring can make the code more flexibel for other uses. 
 
-- A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completion of the process might take and if there is a solution at all.   Because of the complexity you might end up spending a lot of time with little improvement in the end.
+- A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completion of the process might take and if there is a solution at all.   The cost of refatocring could offset the advantages of the refactored code. 
+  There could be new bugs introduced during the process.
 
 for the original VBA script:
 ***
