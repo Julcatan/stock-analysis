@@ -154,7 +154,7 @@ in General:
 - It helps the author coming back to read the code after a while as well as outside users.
 - Refactoring can make the code more flexibel for other uses. 
 
-- A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completioin of the process might take and if there is a solution at all.   Because of the complexity you might end up spending a lot of time with little improvement in the end.
+- A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completion of the process might take and if there is a solution at all.   Because of the complexity you might end up spending a lot of time with little improvement in the end.
 
 for the original VBA script:
 ***
