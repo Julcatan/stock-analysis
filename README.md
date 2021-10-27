@@ -140,16 +140,16 @@ I copied the starter code into VBA editor and reused the existing code to set up
 
 ### Summary
 ___
-    ##### Comparison of the stock performance between 2017 and 2018 
-    ***
-    2017 was a successful year for most stocks, with the top performers being DQ, SEDQ, and ENPH. The only stock with a negative return was TERP. Run had a relatively low return.   
-    2018 shows mostly negative returns except for ENPH and RUN which had high returns in that year.
+#### Comparison of the stock performance between 2017 and 2018 
+***
+2017 was a successful year for most stocks, with the top performers being DQ, SEDQ, and ENPH. The only stock with a negative return was TERP. Run had a relatively low return.   
+2018 shows mostly negative returns except for ENPH and RUN which had high returns in that year.
 
-    ##### Advantages and disadvantages of refactoring code
+#### Advantages and disadvantages of refactoring code
 ___
 
-    in General:
-    ***
+ ##### in General:
+***
   - Through refactoring code becomes easier to understand or read, faster, easier to to update and improve. This can save time and money. 
   - It helps the author coming back to read the code after a while as well as outside users.
   - Refactoring can make the code more flexibel for other uses. 
@@ -157,9 +157,9 @@ ___
   - A disadvantage is that with complex code it might not be clear from the beginning how long exactly the completion of the process might take and if there is a solution at all. The cost of refatocring could offset the advantages of the refactored code. 
   There could be new bugs introduced during the process.
 
-  for the original VBA script:
+   ##### for the original VBA script:
   ***
-  - For our refactored stock-analysis code the main advantage is that it runs much faster. The new code has to loop though the data set only once instead of twelve times as in   the original version.
+  - For our refactored stock-analysis code the main advantage is that it runs much faster. Compared to the original version the new code has to loop though the data set only once instead of twelve times in the original version.
 
     * For 2018 the original code needed almost a full second (0.8632813 seconds) to run versus an elapsed run time of 0.1367188 seconds for the refactored code. 
     * For 2017 the original code needed 0.8242188 seconds versus the refactored code taking only 0.109375 seconds.
