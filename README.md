@@ -3,10 +3,10 @@ ___
 
 ## Overview of Project
 
-Steve is planning to do more research for his parents. He wants to expand the dataset to include the entire stock market.
-The stock analysis VBA code we developed in module 2 might not work as well and take a long time to excecute for a larger amount of stocks.
+The organisation is planning to do more research. They want to expand the dataset to include the entire stock market.
+The stock analysis VBA code we developed might not work as well and take a long time to excecute for a larger amount of stocks.
 
-Therefore the purpose of the project is to restructure the existing code in a way that improves the internal structure but doesn't change its external behavior.
+Therefore the purpose of the project is to restructure the existing VBA code in a way that improves the internal structure but doesn't change its external behavior.
 We want to make the code faster and more efficient by taking fewer steps, using less memory, and improving the logic of the code.
 
 We will measure with a timer in the code if refactoring indeed made the code run faster.
